@@ -3,7 +3,7 @@
   
   
 
-![Sorteador de Nomes](./sistema-menu-basico-csharp.png)
+![menu-basico](menu-basico-cshap.png)
 
   
 

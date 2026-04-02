@@ -127,7 +127,7 @@ public class Funcoes
         int.TryParse(Console.ReadLine(), out mouses);
         Console.Write("Insira o numero de pendrives: ");
         int.TryParse(Console.ReadLine(), out penDrives);
-        total = teclados * 100 + mouses * 35 + penDrives + 60;
+        total = teclados * 100 + mouses * 35 + penDrives * 60;
         Console.WriteLine($"valor total a ser pago: {total.ToString("C")}");
         Console.Write("Insira o valor que o cliente pagou: ");
         int.TryParse(Console.ReadLine(), out valorPago);

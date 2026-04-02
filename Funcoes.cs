@@ -128,16 +128,16 @@ public class Funcoes
         Console.Write("Insira o numero de pendrives: ");
         int.TryParse(Console.ReadLine(), out penDrives);
         total = teclados * 100 + mouses * 35 + penDrives + 60;
-        Console.WriteLine($"valor total a ser pago: {total} reais");
+        Console.WriteLine($"valor total a ser pago: {total.ToString("C")}");
         Console.Write("Insira o valor que o cliente pagou: ");
         int.TryParse(Console.ReadLine(), out valorPago);
         if (valorPago >= total)
         {
-            Console.WriteLine($"Valor suficiente, troco de {valorPago - total} reais.");
+            Console.WriteLine($"Valor suficiente, troco de {(valorPago - total).ToString("C")}");
         }
         else
         {
-            Console.WriteLine($"Valor insuficiente! Faltou {total - valorPago} reais.");
+            Console.WriteLine($"Valor insuficiente! Faltou {(total - valorPago).ToString("C")}");
         }
         Console.ReadKey();
     }

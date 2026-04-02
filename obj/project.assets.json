@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/isaacrogovski/Área de trabalho/aula 30_03/aula 30_03.csproj",
+      "projectUniqueName": "/home/isaacrogovski/Área de trabalho/menu-basico-cshap/aula 30_03.csproj",
       "projectName": "aula 30_03",
-      "projectPath": "/home/isaacrogovski/Área de trabalho/aula 30_03/aula 30_03.csproj",
+      "projectPath": "/home/isaacrogovski/Área de trabalho/menu-basico-cshap/aula 30_03.csproj",
       "packagesPath": "/home/isaacrogovski/.nuget/packages/",
-      "outputPath": "/home/isaacrogovski/Área de trabalho/aula 30_03/obj/",
+      "outputPath": "/home/isaacrogovski/Área de trabalho/menu-basico-cshap/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/isaacrogovski/.nuget/NuGet/NuGet.Config"
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.105/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

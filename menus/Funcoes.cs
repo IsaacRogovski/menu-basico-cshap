@@ -1,6 +1,6 @@
 using System;
 
-namespace menuBasicoCsharp
+namespace menuBasicoCsharp.menus
 {
     public class Funcoes
     {

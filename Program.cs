@@ -1,4 +1,5 @@
 ﻿using System;
+using menuBasicoCsharp.funcoes;
 
 namespace menuBasicoCsharp
 {
@@ -7,6 +8,8 @@ namespace menuBasicoCsharp
         public static void Main(string[] arg)
         {
             Funcoes funcoes = new Funcoes();
+
+
 
             bool sistema = true;
             int opcao;
@@ -56,6 +59,12 @@ namespace menuBasicoCsharp
                             break;
                         case 9:
                             funcoes.baskara();
+                            break;
+                        case 10:
+                            PodeDirigir.verificarSePodeDirigir();
+                            break;
+                        case 11:
+                            DefinirIdade.definirSeAdultoJovemMenorDeIdade();
                             break;
                         case 0:
                             sistema = false;

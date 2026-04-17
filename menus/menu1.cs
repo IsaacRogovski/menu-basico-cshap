@@ -14,7 +14,7 @@ namespace menuBasicoCsharp.menus
             while (sistema)
             {
                 Console.Clear();
-                Console.WriteLine("+───Opções───+\n");
+                Console.WriteLine("+───1º Pagina───+\n");
                 Console.WriteLine("┌ 1 - Verificar o maior número entre DOIS.");
                 Console.WriteLine("├ 2 - Verificar se pode votar com X idade.");
                 Console.WriteLine("├ 3 - Verificar se um número é PAR");
@@ -24,9 +24,10 @@ namespace menuBasicoCsharp.menus
                 Console.WriteLine("├ 7 - Calcular média de DUAS notas.");
                 Console.WriteLine("├ 8 - Ler 2 numeros, exibi-los e depois troca-los de lugar.");
                 Console.WriteLine("├ 9 - Formula de Baskhara.");
-                Console.WriteLine("├ E - Proxima pagina.");
+                Console.WriteLine("├ E - Proxima Página.");
                 Console.WriteLine("└ 0 - SAIR.");
-                Console.Write("\nInsira a opção que deseja: ");
+                Console.WriteLine("\nUse Q & E para navegar ente as paginas\n");
+                Console.Write("Insira a opção que deseja: ");
                 opcao = Console.ReadLine().ToLower();
 
                 switch (opcao)
@@ -59,7 +60,8 @@ namespace menuBasicoCsharp.menus
                         funcoes.baskara();
                         break;
                     case "e":
-                        
+                        Menu2.criarMenu2();
+                        sistema = false;
                         break;
                     case "0":
                         sistema = false;

@@ -7,8 +7,8 @@ namespace menuBasicoCsharp
     {
         public static void Main(string[] arg)
         {
-
-            Menu1.criarMenu1();
+            
+            Menus.criarMenu1();
         }
     }
 }

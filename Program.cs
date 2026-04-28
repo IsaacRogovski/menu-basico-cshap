@@ -9,7 +9,6 @@ namespace menuBasicoCsharp
         {
 
             Menu1.criarMenu1();
-
         }
     }
 }

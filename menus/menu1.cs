@@ -33,7 +33,7 @@ namespace menuBasicoCsharp.menus
                 switch (opcao)
                 {
                     case "1":
-                        funcoes.verificarMaior();
+                        VerificaMaior.verificaOMaiorEntre2Numeros();
                         break;
                     case "2":
                         funcoes.votar();

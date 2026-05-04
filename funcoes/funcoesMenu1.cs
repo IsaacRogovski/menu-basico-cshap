@@ -2,9 +2,9 @@ using System;
 
 namespace menuBasicoCsharp.funcoes
 {
-    public class Funcoes
+    public class FuncoesMenu1
     {
-        public static void verificaOMaiorEntre2Numeros()
+        public void verificaOMaiorEntre2Numeros()
         {
 
             {

@@ -7,7 +7,7 @@ namespace menuBasicoCsharp.menus
     {
         public static void criarMenu1()
         {
-            Funcoes funcoes = new Funcoes();
+            FuncoesMenu1 funcoesMenu1 = new FuncoesMenu1();
             bool sistema = true;
             string? opcao;
 
@@ -31,33 +31,33 @@ namespace menuBasicoCsharp.menus
                 opcao = Console.ReadLine().ToLower();
 
                 switch (opcao)
-                {
+                {   
                     case "1":
-                        Funcoes.verificaOMaiorEntre2Numeros();
+                        funcoesMenu1.verificaOMaiorEntre2Numeros();
                         break;
                     case "2":
-                        funcoes.votar();
+                        funcoesMenu1.votar();
                         break;
                     case "3":
-                        funcoes.ePar();
+                        funcoesMenu1.ePar();
                         break;
                     case "4":
-                        funcoes.multiploDe5();
+                        funcoesMenu1.multiploDe5();
                         break;
                     case "5":
-                        funcoes.maiorOuIgual10();
+                        funcoesMenu1.maiorOuIgual10();
                         break;
                     case "6":
-                        funcoes.valorItens();
+                        funcoesMenu1.valorItens();
                         break;
                     case "7":
-                        funcoes.mediaNota();
+                        funcoesMenu1.mediaNota();
                         break;
                     case "8":
-                        funcoes.trocarValores();
+                        funcoesMenu1.trocarValores();
                         break;
                     case "9":
-                        funcoes.baskara();
+                        funcoesMenu1.baskara();
                         break;
                     case "e":
                         criarMenu2();
@@ -74,7 +74,7 @@ namespace menuBasicoCsharp.menus
 
         public static void criarMenu2()
         {
-            Funcoes funcoes = new Funcoes();
+            FuncoesMenu2 funcoesMenu2 = new FuncoesMenu2();
             bool sistema = true;
             string? opcao;
 
@@ -82,7 +82,7 @@ namespace menuBasicoCsharp.menus
             {
                 Console.Clear();
                 Console.WriteLine("+───2º Pagina───+\n");
-                Console.WriteLine("┌ 1 - ");
+                Console.WriteLine("┌ 1 - Verificar se pode dirigir.");
                 Console.WriteLine("├ 2 - ");
                 Console.WriteLine("├ 3 - ");
                 Console.WriteLine("├ 4 - ");
@@ -100,7 +100,7 @@ namespace menuBasicoCsharp.menus
                 switch (opcao)
                 {
                     case "1":
-                        
+                    funcoesMenu2.verificarSePodeDirigir();
                         break;
                     case "2":
                         

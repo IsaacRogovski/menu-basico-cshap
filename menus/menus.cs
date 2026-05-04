@@ -3,9 +3,9 @@ using menuBasicoCsharp.funcoes;
 
 namespace menuBasicoCsharp.menus
 {
-    class Menu2
+    class Menus
     {
-        public static void criarMenu2()
+        public static void criarMenu1()
         {
             Funcoes funcoes = new Funcoes();
             bool sistema = true;
@@ -14,7 +14,7 @@ namespace menuBasicoCsharp.menus
             while (sistema)
             {
                 Console.Clear();
-                Console.WriteLine("+───2º Pagina───+\n");
+                Console.WriteLine("+───1º Pagina───+\n");
                 Console.WriteLine("┌ 1 - Verificar o maior número entre DOIS.");
                 Console.WriteLine("├ 2 - Verificar se pode votar com X idade.");
                 Console.WriteLine("├ 3 - Verificar se um número é PAR");
@@ -24,7 +24,7 @@ namespace menuBasicoCsharp.menus
                 Console.WriteLine("├ 7 - Calcular média de DUAS notas.");
                 Console.WriteLine("├ 8 - Ler 2 numeros, exibi-los e depois troca-los de lugar.");
                 Console.WriteLine("├ 9 - Formula de Baskhara.");
-                Console.WriteLine("├ Q - Página Anterior.");
+                Console.WriteLine("├ E - Proxima Página.");
                 Console.WriteLine("└ 0 - SAIR.");
                 Console.WriteLine("\nUse Q & E para navegar ente as paginas\n");
                 Console.Write("Insira a opção que deseja: ");
@@ -33,7 +33,7 @@ namespace menuBasicoCsharp.menus
                 switch (opcao)
                 {
                     case "1":
-                        funcoes.verificarMaior();
+                        Funcoes.verificaOMaiorEntre2Numeros();
                         break;
                     case "2":
                         funcoes.votar();
@@ -59,8 +59,8 @@ namespace menuBasicoCsharp.menus
                     case "9":
                         funcoes.baskara();
                         break;
-                    case "q":
-                        Menu1.criarMenu1();
+                    case "e":
+                        criarMenu2();
                         sistema = false;
                         break;
                     case "0":
@@ -70,8 +70,73 @@ namespace menuBasicoCsharp.menus
                         break;
                 }
             }
+        }
 
+        public static void criarMenu2()
+        {
+            Funcoes funcoes = new Funcoes();
+            bool sistema = true;
+            string? opcao;
 
+            while (sistema)
+            {
+                Console.Clear();
+                Console.WriteLine("+───2º Pagina───+\n");
+                Console.WriteLine("┌ 1 - ");
+                Console.WriteLine("├ 2 - ");
+                Console.WriteLine("├ 3 - ");
+                Console.WriteLine("├ 4 - ");
+                Console.WriteLine("├ 5 - ");
+                Console.WriteLine("├ 6 - ");
+                Console.WriteLine("├ 7 - ");
+                Console.WriteLine("├ 8 - ");
+                Console.WriteLine("├ 9 - ");
+                Console.WriteLine("├ Q - Página Anterior.");
+                Console.WriteLine("└ 0 - SAIR.");
+                Console.WriteLine("\nUse Q & E para navegar ente as paginas\n");
+                Console.Write("Insira a opção que deseja: ");
+                opcao = Console.ReadLine().ToLower();
+
+                switch (opcao)
+                {
+                    case "1":
+                        
+                        break;
+                    case "2":
+                        
+                        break;
+                    case "3":
+                        
+                        break;
+                    case "4":
+                        
+                        break;
+                    case "5":
+                        
+                        break;
+                    case "6":
+                        
+                        break;
+                    case "7":
+                        
+                        break;
+                    case "8":
+                        
+                        break;
+                    case "9":
+                        
+                        break;
+                    case "q":
+                        criarMenu1();
+                        sistema = false;
+                        break;
+                    case "0":
+                        sistema = false;
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
     }
 }

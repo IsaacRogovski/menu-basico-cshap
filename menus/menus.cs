@@ -132,8 +132,80 @@ namespace menuBasicoCsharp.menus
                         sistema = false;
                         break;
                     case "e":
-                        // criarMenu3();
+                        criarMenu3();
                         sistema = false;
+                        break;
+                    case "0":
+                        sistema = false;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        public static void criarMenu3()
+        {
+            // FuncoesMenu3 funcoesMenu3 = new FuncoesMenu3();
+            bool sistema = true;
+            string? opcao;
+
+            while (sistema)
+            {
+                Console.Clear();
+                Console.WriteLine("+───3º Pagina───+\n");
+                Console.WriteLine("┌ 1 - .");
+                Console.WriteLine("├ 2 - .");
+                Console.WriteLine("├ 3 - .");
+                Console.WriteLine("├ 4 - .");
+                Console.WriteLine("├ 5 - .");
+                Console.WriteLine("├ 6 - .");
+                Console.WriteLine("├ 7 - .");
+                Console.WriteLine("├ 8 - .");
+                Console.WriteLine("├ 9 - .");
+                Console.WriteLine("├ Q - Página Anterior.");
+                Console.WriteLine("├ E - Proxima Página.");
+                Console.WriteLine("└ 0 - SAIR.");
+                Console.WriteLine("\nUse Q & E para navegar ente as paginas\n");
+                Console.Write("Insira a opção que deseja: ");
+                opcao = (Console.ReadLine() ?? "").ToLower();
+
+                switch (opcao)
+                {
+                    case "1":
+                        
+                        break;
+                    case "2":
+                       
+                        break;
+                    case "3":
+                       
+                        break;
+                    case "4":
+                        
+                        break;
+                    case "5":
+                        
+                        break;
+                    case "6":
+                        
+                        break;
+                    case "7":
+                        
+                        break;
+                    case "8":
+                        
+                        break;
+                    case "9":
+                        
+                        break;
+                    case "q":
+                        criarMenu2();
+                        sistema = false;
+                        break;
+                    case "e":
+                        // criarMenu3();
+                        // sistema = false;
                         break;
                     case "0":
                         sistema = false;

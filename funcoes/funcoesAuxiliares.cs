@@ -8,7 +8,7 @@ namespace menuBasicoCsharp.funcoes
         {
             int valor;
             Console.Write(enunciado);
-            while (!int.TryParse(Console.ReadLine(), out valor) || valorMinimo > valor || valor > valorMaximo)
+            while (!int.TryParse(Console.ReadLine(), out valor) && valorMinimo > valor && valor > valorMaximo)
             {
 
                 Console.WriteLine("Insira um valor valido!");
@@ -22,7 +22,7 @@ namespace menuBasicoCsharp.funcoes
         {
             float valor;
             Console.Write(enunciado);
-            while (!float.TryParse(Console.ReadLine(), out valor) || valorMinimo > valor || valor > valorMaximo)
+            while (!float.TryParse(Console.ReadLine(), out valor) && valorMinimo > valor && valor > valorMaximo)
             {
 
                 Console.WriteLine("Insira um valor valido!");
